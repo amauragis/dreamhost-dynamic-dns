@@ -1,0 +1,12 @@
+[Unit]
+Description=Timer to control dreamhost-dynamic-dns service
+Wants=network-online.target
+After=network-online.target
+
+[Timer]
+OnBootSec=1s
+OnUnitActiveSec=4h
+
+[Install]
+WantedBy=multi-user.target
+

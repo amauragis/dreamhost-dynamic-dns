@@ -1,0 +1,7 @@
+[Unit]
+Description=Inform dreamhost DDNS of my IP
+
+[Service]
+Type=simple
+ExecStart=/home/pi/dreamhost-dynamic-dns/dynamicdns.bash -v
+User=pi
